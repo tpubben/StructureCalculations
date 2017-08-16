@@ -2,8 +2,8 @@ import math
 
 # The appropriate input for this function is a list of tuples in the format
 # [(x1, y1, z1), (x2, y2, z2), (x3, y3, z3)]
-def calc_strikedip(ptA, ptB, ptC):
-
+def calc_strikedip(pts):
+    ptA, ptB, ptC = pts[0], pts[1], pts[2]
     x1, y1, z1 = float(ptA[0]), float(ptA[1]), float(ptA[2])
     x2, y2, z2 = float(ptB[0]), float(ptB[1]), float(ptB[2])
     x3, y3, z3 = float(ptC[0]), float(ptC[1]), float(ptC[2])
