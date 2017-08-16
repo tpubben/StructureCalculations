@@ -36,11 +36,11 @@ def calc_strikedip(ptA, ptB, ptC):
         northing = -u1
     
     if easting >= 0:
-        part2_strike = math.pow(easting, 2) + math.pow(northing, 2)
-        strike = math.degrees(math.acos(northing / math.sqrt(part2_strike)))
+        partA_strike = math.pow(easting, 2) + math.pow(northing, 2)
+        strike = math.degrees(math.acos(northing / math.sqrt(partA_strike)))
     else:
-        partB_strike = northing / math.sqrt(math.pow(easting, 2) + math.pow(northing, 2))
-        strike = math.degrees(2 * math.pi - math.acos(partB_strike))
+        partA_strike = northing / math.sqrt(math.pow(easting, 2) + math.pow(northing, 2))
+        strike = math.degrees(2 * math.pi - math.acos(partA_strike))
 
     # determine dip
     print(strike, 'strike')
